@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    height: 93vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 52px;
+}
+.logo{
+    width: 148px;
+    cursor: pointer;
+}
+#language{
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 6px 20px;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    margin: 200px 194px;
+}
+.header-content h1{
+    margin-bottom: 14px;
+    font-size: 3rem;
+    font-weight: 750;
+    line-height: 70px;
+   
+}
+.header-content h3{
+    font-size: 25px;
+    margin-bottom: 32px;
+    font-weight: 200;
+}
+.header-content h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+.email-signup{
+    margin-top: 20px;
+}
+.email-signup input{
+    color: white;
+    line-height: 3.4rem;
+    font-size: 16px;
+    padding: 0 15px;
+    border-radius: 6px;
+    flex: 1;
+    width: 370px;
+    background: transparent;
+    border: 1px solid white;
+    
+}
+.email-signup button{
+    background: red;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-left: 4px;
+}
+
+.row{
+    padding: 30px 12%;
+    border-top: 8px solid #333;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 24px;
+}
+.text-col{
+    flex-basis: 50%;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+
+
+
+.freq{
+    border-top: 8px solid #333;
+    padding: 10px 4%;
+    text-align: center;
+    font-size: 18px;
+}
+.freq h2{
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 45px;
+
+}
+
+
+.accordion{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 60px;
+    position: absolute;
+    right: 20px;
+    transform: transform 0.5s ;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600;
+    padding-top: 30px;
+    padding-bottom: 180px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+.freq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.freq h4{
+    padding-top: 45px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+/*===================footer=========*/
+
+
+.footer{
+    padding: 70px 170px ;
+    border-top: 8px solid #333;
+    color: rgba(255,255,255,0.7);
+    margin: auto;
+
+}
+.footer h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer .col{
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.footer .rower{
+    align-items: center;
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+}
+.footer .language{
+    font-size: 16px;
+    padding: 6px 20px;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.copyright-txt{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

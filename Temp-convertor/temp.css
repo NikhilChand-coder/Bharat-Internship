@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('backgound.jpg');
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+}
+.container{
+    border: 8px solid white;
+    height: 80vh;
+    width: 700px;
+    margin: 100px auto;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('con-background.webp');
+    background-size: cover;
+}
+.nav{
+    font-size: 45px;
+    font-family: 'Arial, sans-serif';
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: underline;
+}
+
+
+.acc{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 450px;
+
+}
+.acc li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+.acc li label{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 200;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+}
+label::after{
+    content: '>';
+    font-size: 28px;
+    position: absolute;
+    right: 25px;
+    transform: transform 0.5s ;
+}
+input[type="radio"]{
+    display: none;
+}
+.acc .content{
+    background: rgb(127 147 225 / 61%) ;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.acc input[type="radio"]:checked + label + .content{
+    padding-top: 30px;
+    padding-bottom: 190px;
+}
+.acc input[type="radio"]:checked + label::after{
+    transform: rotate(90deg);
+}
+
+.cel{
+    line-height: 40px;
+    font-size: 22px;
+    border: 6px solid rgb(0 42 201 / 97%);
+    border-radius: 8px;
+    padding-left: 6px;
+}
+#convert1, #convert2{
+    margin: 20px;
+    height: 40px;
+    width: 150px;
+    border: 6px solid green;
+    font-size: 20px;
+    border-radius: 22px;
+    background-color: rgb(0 255 74);
+    color: red;
+    font-weight: bold;
+}
+.feh{
+    font-size: 22px;
+    line-height: 40px;
+    padding-left: 6px;
+    font-weight: bold;
+    width: 130px;
+    text-decoration: underline;
+    outline: none;
+    background: transparent;
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .container{
+        width: 300px;
+        height: 75vh;
+    }
+    .nav{
+        font-size: 30px;
+    }
+    .acc li label{
+        font-size: 18px;
+    }
+    .cel{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #convert1, #convert2{
+        margin: 10px;
+    }
+    .feh{
+        font-size: 18px;
+        line-height: 30px;
+        width: 90px;
+    }
+    .acc input[type="radio"]:checked + label + .content{
+        padding-top: 15px;
+        padding-bottom: 150px;
+    }
+    
+}

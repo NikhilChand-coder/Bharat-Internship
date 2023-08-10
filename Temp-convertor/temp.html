@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <h3>Temperature Convertor</h3>
+            </div>
+            <ul class="acc">
+                <li>
+                    <input type="radio" name="acc" id="first">
+                    <label for="first">Celsius To Fehrenheit</label>
+                    <div class="content">
+                        <p>
+                            <input type="text" placeholder="Celcius" id="celsius" name="c" value="" class="cel"><br>
+                            <button id="convert1">CONVERT</button><br>
+                            <input type="text" class="feh" id="fehResult" value=""> Fehrenheit
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="acc" id="second">
+                    <label for="second">Fehrenheit To Celsius</label>
+                    <div class="content">
+                        <p>
+                            <input type="text" placeholder="Fehrenheit" id="fehrenheit" name="f" value="" class="cel"><br>
+                            <button id="convert2">CONVERT</button><br>
+                            <input type="text" class="feh" id="celResult" value=""> Celsius
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>
